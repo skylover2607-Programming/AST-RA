@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jelajahi koleksi fashion ASTÉRA.">
+  <title>ASTÉRA | Koleksi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">ASTÉRA<span>®</span></a>
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navigasi utama"><a href="index.html">Beranda</a><a href="tentang.html">Tentang</a><a class="active" href="katalog.html">Koleksi</a><a href="kontak.html">Kontak</a></nav>
+    <a class="header-note" href="kontak.html">GET IN TOUCH ↗</a>
+  </header>
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">THE ASTÉRA EDIT · 2030</p><h1>Pieces with <em>presence.</em></h1>
+      <p>Kurasi busana dan aksesori untuk gaya yang berkarakter.</p>
+    </section>
+    <section class="catalog section-wrap">
+      <div class="catalog-tools">
+        <label class="sr-only" for="search-product">Cari produk</label>
+        <input id="search-product" type="search" placeholder="Cari nama produk...">
+        <label class="sr-only" for="category-filter">Pilih kategori</label>
+        <select id="category-filter"><option value="all">Semua kategori</option><option value="dress">Dress</option><option value="outer">Outer</option><option value="top">Top</option><option value="bottom">Bottom</option><option value="accessory">Accessory</option></select>
+      </div>
+      <p id="product-count" class="muted" aria-live="polite">Menampilkan 6 koleksi</p>
+      <div class="product-grid catalog-grid" id="product-list">
+        <article class="product-card" data-name="Elara Evening Dress" data-category="dress"><img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=900&q=85" alt="Elara Evening Dress, gaun elegan"><div class="product-info"><span>DRESS</span><h3>Elara Evening Dress</h3><p>Rp 1.250.000</p></div></article>
+        <article class="product-card" data-name="Maison Tailored Blazer" data-category="outer"><img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=85" alt="Maison Tailored Blazer, blazer klasik"><div class="product-info"><span>OUTER</span><h3>Maison Tailored Blazer</h3><p>Rp 980.000</p></div></article>
+        <article class="product-card" data-name="Solène Classic Bag" data-category="accessory"><img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=85" alt="Solène Classic Bag, tas tangan klasik"><div class="product-info"><span>ACCESSORY</span><h3>Solène Classic Bag</h3><p>Rp 750.000</p></div></article>
+        <article class="product-card" data-name="Aurelia Knit Top" data-category="top"><img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=900&q=85" alt="Aurelia Knit Top, atasan rajut"><div class="product-info"><span>TOP</span><h3>Aurelia Knit Top</h3><p>Rp 425.000</p></div></article>
+        <article class="product-card" data-name="Celeste Pleated Skirt" data-category="bottom"><img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=900&q=85" alt="Celeste Pleated Skirt, rok lipit"><div class="product-info"><span>BOTTOM</span><h3>Celeste Pleated Skirt</h3><p>Rp 590.000</p></div></article>
+        <article class="product-card" data-name="Noir Leather Belt" data-category="accessory"><img src="https://images.unsplash.com/photo-1624222247344-550fb8d1f4d6?auto=format&fit=crop&w=900&q=85" alt="Noir Leather Belt, ikat pinggang kulit"><div class="product-info"><span>ACCESSORY</span><h3>Noir Leather Belt</h3><p>Rp 280.000</p></div></article>
+      </div>
+      <p id="empty-state" class="empty-state" hidden>Produk tidak ditemukan. Coba kata kunci atau kategori lain.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="logo" href="index.html">ASTÉRA<span>®</span></a><p>Timeless pieces, endless stories.</p><small>© 2030 ASTÉRA. Website konsep untuk proyek pembelajaran.</small></footer>
+</body>
+</html>
